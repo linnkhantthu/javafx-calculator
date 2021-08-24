@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -180,11 +182,12 @@
                </font>
             </TextField>
             <Label layoutX="8.0" layoutY="6.0" text="Calculator" />
-            <Label fx:id="backspace" layoutX="344.0" layoutY="56.0" onMouseClicked="#onClickBackspace" text="&lt;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="344.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="56.0">
-               <font>
-                  <Font size="20.0" />
-               </font></Label>
             <Label layoutX="8.0" layoutY="116.0" onMouseClicked="#onClickReset" style="-fx-background-color: orange; -fx-background-radius: 20px;" text="  Reset  " AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="312.0" AnchorPane.topAnchor="116.0" />
+            <ImageView fx:id="backspace" fitHeight="26.0" fitWidth="18.0" layoutX="336.0" layoutY="58.0" onMouseClicked="#onClickBackspace" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="336.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="58.0">
+               <image>
+                  <Image url="@images/backspace.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </top>
