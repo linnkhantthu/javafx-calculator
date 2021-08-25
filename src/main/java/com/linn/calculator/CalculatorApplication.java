@@ -5,6 +5,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -24,6 +25,7 @@ public class CalculatorApplication extends Application {
         Scene scene = new Scene(root, 360, 460);
         scene.setFill(Color.TRANSPARENT);
         stage.setTitle("Calculator");
+        stage.getIcons().add(new Image(String.valueOf(CalculatorApplication.class.getResource("images/calculator-app-icon.png"))));
         stage.initStyle(StageStyle.TRANSPARENT);
         root.setOnMousePressed(new EventHandler<MouseEvent>() {
             @Override
